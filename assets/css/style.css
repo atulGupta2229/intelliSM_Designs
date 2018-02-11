@@ -1,0 +1,105 @@
+body{
+    background-image: url('../images/bg.jpg');
+    background-size: cover;
+    overflow-x: hidden;
+}
+#layer0{
+    position: absolute;
+    z-index: -1;
+    height: 24%;
+    width: 100%;
+    opacity: 0.5;
+    animation-name: layer0-anim;
+    animation-duration: 1.2s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+}
+@keyframes layer0-anim{
+    0%{
+        margin-top: 0%;
+    }
+    100%{
+        margin-top: 0.3%
+    }
+}
+#layer1{
+    position: absolute;
+    z-index: -0;
+    height: 23%;
+    width: 100%;
+    transform: rotateZ(-0.4deg);
+    animation-name: layer1-anim;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+}
+@keyframes layer1-anim{
+    0%{
+        filter: hue-rotate(15deg);
+        margin-top: 0.1%
+    }
+    50%{
+        filter: hue-rotate(25deg);
+        margin-top: 0.2%
+    }
+    75%{
+        filter: hue-rotate(35deg);
+        margin-top: 0.1%
+    }
+    100%{
+        filter: hue-rotate(45deg);
+        margin-top: 0%
+    }
+}
+#layer2{
+    position: absolute;
+    z-index: 1;
+    height: 22%;
+    width: 100%;
+}
+.box{
+    background-color: rgba(40, 40, 45, 0.7);
+    height: 450px;
+    width: 90%;
+    padding: 6% 6% 0% 6%;
+    color: #f9f9f9;
+    margin-top: 5%;
+}
+.abt{
+    font-size: 1em;
+    margin-top: 10%;
+}
+.box-trans{
+    height: 450px;
+    width: 90%;
+    padding: 15% 6% 0% 16%;
+    color: #f9f9f9;
+    margin-top: 5%;
+}
+.sticker{
+    height: 100px;
+    width: 500px;
+    font-size: 3em;
+    padding: 2%;
+    background-color: rgba(200, 200, 200, 0.6);
+    margin-bottom: 10%;
+    color: #444;
+    transition: 0.6s;
+}
+.sticker:hover{
+    border-radius: 0px 0px 60px 0px;
+    background-color:rgba(198, 255, 0, 0.6);
+}
+
+.intelli{
+    position: absolute;
+    z-index: 2;
+    right: 0;
+    margin: 2% 11% 3% 4%;
+    font-size: 5em;
+    color: #f1f1f1;
+}
